@@ -1,11 +1,25 @@
-<ul class="list-group">
-
-<a [routerLink]="ruta.path" class="list-group-item"
-
-*ngFor="let ruta of rutas">
-{{ruta.name}}
-</a>
 
 
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">App component</a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+       
+            <a [routerLink]="ruta.path" class="nav-link"
 
-</ul>
+            *ngFor="let ruta of rutas">
+            {{ruta.name}}
+            </a>
+       
+      </ul>
+    </div>
+  </nav>
+  
