@@ -20,4 +20,8 @@ mensajes: any;
 
   }
 
+  escuchaClick( id :number){
+    console.log('click en :', id);
+  }
+
 }
