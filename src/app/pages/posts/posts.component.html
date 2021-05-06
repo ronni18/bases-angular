@@ -2,16 +2,10 @@
 
 <ul class="list-group">
 
-    <li *ngFor="let mensaje of mensajes | async " class="list-group-item">
+  <app-post *ngFor="let mensaje of mensajes | async "
+  [mensaje]="mensaje"></app-post>
 
-        <h2>{{mensaje.title}}</h2>
-
-            <p>
-
-              {{mensaje.body}}
-            </p>
-    </li>
-
+   
 
 
 </ul>
